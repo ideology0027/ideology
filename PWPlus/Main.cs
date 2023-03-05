@@ -24,14 +24,14 @@ namespace PWPlus
         // on startup
         public override void OnApplicationStart()
         {
-            LoggerInstance.Msg(ConsoleColor.Cyan, "Starting PW Plus...");
+            LoggerInstance.Msg(ConsoleColor.Cyan, "Enter: Ideology!");
             Logger = LoggerInstance;
         }
         
         // on quit
         public override void OnApplicationQuit()
         {
-            LoggerInstance.Msg(ConsoleColor.Cyan, "Quitting PW Plus...");
+            LoggerInstance.Msg(ConsoleColor.Cyan, "Leaving: Ideology?");
         }
         
         // tab enum
@@ -94,7 +94,7 @@ namespace PWPlus
 
                 case Tab.WorldWarper:
                     // Warp World Tab
-                    GUI.Label(new Rect(5f, 50f, 100f, 20f), "Warp To World");
+                    GUI.Label(new Rect(5f, 50f, 100f, 20f), "World Warper");
                     
                     worldToWarp = GUI.TextField(new Rect(125f, 75f, 85f, 33f), worldToWarp);
                     
@@ -158,13 +158,13 @@ namespace PWPlus
             style.fontStyle = FontStyle.Bold;
             style.fontSize = 60;
             style.normal.textColor = Color.white;
-            GUI.Label(new Rect(Screen.width - 280, 40, 480, 180), "PW Plus", style);
+            GUI.Label(new Rect(Screen.width - 280, 40, 480, 180), "Ideology", style);
 
 
             // Render the menu if showMenu is true
             if (showMenu)
             {
-                windowSize = GUI.Window(0, windowSize, (GUI.WindowFunction)MyWindow, "PW Plus Window");
+                windowSize = GUI.Window(0, windowSize, (GUI.WindowFunction)MyWindow, "Ideology - Window");
             }
         }
 
