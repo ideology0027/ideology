@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using MelonLoader;
 
 // MelonLoader assembly info
-[assembly: MelonInfo(typeof(PWPlus.PWPlus), "PW Plus", "1.0", "The PW Plus Dev Team")]
+[assembly: MelonInfo(typeof(PWPlus.PWPlus), "Ideology", "1.0", "Ideology#0027")]
 [assembly: MelonGame("Kukouri", "Pixel Worlds")]
 
 // General Information about an assembly is controlled through the following
